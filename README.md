@@ -9,7 +9,7 @@ Repositório de entrega do desafio técnico de QA da Beedoo.
 | Recurso | Link |
 |---|---|
 | 🌐 Aplicação testada | https://creative-sherbet-a51eac.netlify.app/ |
-| 📊 Planilha de Casos de Teste | https://docs.google.com/spreadsheets/d/16vlCUrA_4Njdk28fVk2qTlWaqwJ5HOifzaLW_3Ijo8o/edit?usp=sharing |
+| 📊 Planilha de Casos de Teste | https://docs.google.com/spreadsheets/d/1M-4mDUo6IUiWPouF8wJCqVBtnZsUEzJI4UVzCAFM-hc/edit?gid=544216340#gid=544216340 |
 | 🗂️ Evidências | https://drive.google.com/drive/folders/1rDclbcYpZfH_qYHSzMjhOW1pSKJ1Adp5?usp=drive_link |
 
 ---
@@ -46,7 +46,7 @@ Com base na exploração da aplicação, os pontos que considero mais críticos 
 
 Os casos de teste foram escritos em formato **Gherkin (DADO / QUANDO / ENTÃO)** e estão disponíveis na planilha abaixo.
 
-📊 **[Acessar planilha de casos de teste](https://docs.google.com/spreadsheets/d/16vlCUrA_4Njdk28fVk2qTlWaqwJ5HOifzaLW_3Ijo8o/edit?usp=sharing)**
+📊 **[Acessar planilha de casos de teste](https://docs.google.com/spreadsheets/d/1M-4mDUo6IUiWPouF8wJCqVBtnZsUEzJI4UVzCAFM-hc/edit?gid=544216340#gid=544216340)**
 
 ### Resumo de Cobertura
 
@@ -99,12 +99,12 @@ Foram identificados **8 bugs** durante a exploração e execução dos testes:
 
 ---
 
-### BUG-005 — Campo 'Link' não aparece ao selecionar tipo Online
+### BUG-005 — Link de inscrição do curso Online não é exibido na listagem
 - **Severidade:** 🔴 Alta
-- **Passos:** Acessar cadastro → Selecionar Tipo: 'Online' → Observar o formulário
-- **Resultado Atual:** O campo 'Link' não é exibido. Não é possível informar a URL de acesso ao curso online.
-- **Resultado Esperado:** Ao selecionar 'Online', o campo 'Link' deve aparecer dinamicamente no formulário.
-- **Impacto:** Cursos online ficam sem link de acesso, tornando o cadastro de cursos online incompleto e inútil para os alunos.
+- **Passos:** Cadastrar curso Online com o campo 'Link de inscrição' preenchido → Acessar a listagem → Observar o card
+- **Resultado Atual:** O link de inscrição informado no cadastro não aparece no card do curso Online na listagem.
+- **Resultado Esperado:** O card de cursos Online deve exibir o link de inscrição para que o usuário possa acessá-lo diretamente pela listagem.
+- **Impacto:** O campo 'Link de inscrição' torna-se inútil na prática, pois o dado é cadastrado mas nunca exibido ao usuário.
 
 ---
 
